@@ -105,8 +105,3 @@
         isReady: isReady
     };
 })();
-
-
-// Sets the initial score to 0
-var score = 0;
-document.getElementById('lvlScore').innerHTML = score;
