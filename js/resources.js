@@ -92,16 +92,12 @@
         return ready;
     }
 
-    /* This function will add a function to the callback stack that is called
-     * when all requested images are properly loaded.
-     */
+    
     function onReady(func) {
         readyCallbacks.push(func);
     }
 
-    /* This object defines the publicly accessible functions available to
-     * developers by creating a global Resources object.
-     */
+   
     window.Resources = {
         load: load,
         get: get,
@@ -109,3 +105,8 @@
         isReady: isReady
     };
 })();
+
+
+// Sets the initial score to 0
+var score = 0;
+document.getElementById('lvlScore').innerHTML = score;
